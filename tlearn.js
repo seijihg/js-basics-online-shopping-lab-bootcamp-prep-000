@@ -30,7 +30,7 @@ function addToCart(item) {
    var txt = ""
    if (cart.length > 0) {
       for (let i = 0; i < cart.length; i++) {
-          txt +=
+          txt += 
    }
    }
  }
