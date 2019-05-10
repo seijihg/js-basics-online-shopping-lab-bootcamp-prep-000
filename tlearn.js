@@ -15,15 +15,17 @@ function getRandomIntInclusive(min, max) {
 let test = new Shopping(item[0], 10)
 let test1 = new Shopping(item[1], 20)
 
-console.log(test.itemName + ": " + test.itemPrice)
-
 function addToCart(item) {
   for (i = 0; i < item.length; i++) {
     cart.push(new Shopping(item[i], getRandomIntInclusive(1, 100)))
-    return `${item[i]} has beed added to your cart.`
+    console.log(`${item[i]} has beed added to your cart.`)
   } return cart
 }
  
  addToCart(item)
  
  console.log(cart)
+ 
+ function viewCart() {
+   
+ }
