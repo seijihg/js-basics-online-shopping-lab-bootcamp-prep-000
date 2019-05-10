@@ -27,5 +27,8 @@ function addToCart(item) {
  console.log(cart)
  
  function viewCart() {
-   
+   if (cart.length > 0)
+   for (let i = 0; i < cart.length; i++) {
+     
+   }
  }
