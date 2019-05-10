@@ -30,5 +30,9 @@ function addToCart(item) {
       for (let i = 0; i < cart.length; i++) {
           txt += cart[i]
    }
+   } else {
+     console.log("Your shopping cart is empty")
    }
  }
+ 
+ viewCart()
