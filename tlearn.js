@@ -20,6 +20,7 @@ console.log(test.itemName + ": " + test.itemPrice)
 function addToCart(item) {
   for (i = 0; i < item.length; i++) {
     cart.push(new Shopping(item[i], getRandomIntInclusive(1, 100)))
+    console.log(`${item} has beed added to your cart.`)
   } return cart
 }
  
