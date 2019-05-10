@@ -28,7 +28,7 @@ function addToCart(item) {
    var txt = ""
    if (cart.length > 0) {
       for (let i = 0; i < cart.length; i++) {
-          console.log(txt += cart[i])
+          console.log(txt += "In yorur cart, you have" + cart.itemName)
    }
    } else {
      console.log("Your shopping cart is empty")
