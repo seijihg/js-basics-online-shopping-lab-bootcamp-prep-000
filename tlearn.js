@@ -12,8 +12,6 @@ function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
 }
 
-let test = new Shopping(item[0], 10)
-let test1 = new Shopping(item[1], 20)
 
 function addToCart(item) {
   for (i = 0; i < item.length; i++) {
