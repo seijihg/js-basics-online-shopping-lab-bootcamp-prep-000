@@ -15,7 +15,7 @@ function getRandomIntInclusive(min, max) {
 
 function addToCart(item) {
   for (i = 0; i < item.length; i++) {
-    cart.push(Shopping(item[i], getRandomIntInclusive(1, 100)))
+    cart.push(new Shopping(item[i], getRandomIntInclusive(1, 100)))
     console.log(`${item[i]} has beed added to your cart.`)
   } return cart
 }
