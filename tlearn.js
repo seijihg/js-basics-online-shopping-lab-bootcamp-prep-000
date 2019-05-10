@@ -1,0 +1,28 @@
+var cart = []
+var item = ["Banana", "Apple", "Orange", "Pearl", "Strawberry"]
+
+function Shopping(name, price) {
+  this.itemName = name
+  this. itemPrice = price
+}
+
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
+}
+
+let test = new Shopping(item[0], 10)
+let test1 = new Shopping(item[1], 20)
+
+console.log(test.itemName + ": " + test.itemPrice)
+
+function addToCart(item) {
+  for (i = 0; i < item.length; i++) {
+    cart.push(new Shopping(item[i], getRandomIntInclusive(1, 100)))
+  } return cart
+}
+ 
+ addToCart(item)
+ 
+ console.log(cart)
