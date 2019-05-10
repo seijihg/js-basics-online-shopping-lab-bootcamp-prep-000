@@ -28,7 +28,7 @@ function addToCart(item) {
    var txt = ""
    if (cart.length > 0) {
       for (let i = 0; i < cart.length; i++) {
-          txt += "In your cart, you have" + cart.itemName
+          txt += "In your cart, you have" + cart[0]
           console.log(txt)
    }
    } else {
